@@ -3,11 +3,11 @@
 ![87471037-50ad3c80-c5e3-11ea-9f1b-7963f4615b28](https://user-images.githubusercontent.com/53241212/129302453-14ea801d-10f0-4eac-929c-03aa601a1621.png)
 
 
+<h2>Intro</h2>
 
+For CI/CD integration, I used Github Actions to automate the deployment process for a Google Cloud Server from a previous <a href="https://github.com/jon-michael-c/Database-Web-Basics">repository</a>. The source code and yml file are located in there.
 
-For CI/CD integration, I used Github Actions to automate the deployment process for a Google Cloud Server from a previous <a href="https://github.com/jon-michael-c/Database-Web-Basics">repository</a>.
-
-The yml file is configured to connect to the cloud server via ssh. Once ssh connection is established, commands will run that will pull contents from the main branch. The server will be continously up to date whenever new content is pushed into the main branch. 
+The yml file is configured to connect to the cloud server via ssh. Once ssh connection is established, commands will run that will pull contents from the main branch. The server will be continously up to date whenever new content is pushed into the main branch.
 
 <pre><code>
 
@@ -53,5 +53,10 @@ jobs:
             sudo git pull
             
 </code></pre>
+
+<h3><a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/.github/workflows/actions.yml">Link to file</a></h3>
+
+<h2>Demonstration</h2>
+
 
 
