@@ -47,7 +47,8 @@ jobs:
           host: 34.121.233.142
           username: admin1
           key: ${{secrets.GCP_SSH}}
-          passphrase: 12345
+          passphrase: 12345![Screenshot from 2021-08-13 00-18-53](https://user-images.githubusercontent.com/53241212/129304414-aa341d50-cfb3-4de0-9d75-fa4a46aac2ae.png)
+
           script: |
             cd /var/www/html/Database-Web-Basics/
             sudo git pull
@@ -57,6 +58,20 @@ jobs:
 <h3><a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/.github/workflows/actions.yml">Link to file</a></h3>
 
 <h2>Demonstration</h2>
+
+<h3>The server page we would like to edit</h3>
+
+![Screenshot from 2021-08-13 00-05-56](https://user-images.githubusercontent.com/53241212/129303486-11098d2f-971b-47b8-a14b-2990746a8e6f.png)
+
+If we want to change a header tag inside the index.html file in the repository. We must push our changes to the main branch and then connect the google cloud shell to manually pull the contents so everything is up to date on the server side. With Github Actions, this process is automated everytime there is a push to repo.
+
+On a local machine we can make the edit to the html file and push it. This will trigger github actions to run the scripts specified earlier. 
+
+![Screenshot from 2021-08-13 00-18-53](https://user-images.githubusercontent.com/53241212/129304431-484da873-f671-43c4-8420-80319ea86dee.png)
+
+Now, the server is updated without having to manually log into the cloud terminal.
+
+![Screenshot from 2021-08-13 00-20-02](https://user-images.githubusercontent.com/53241212/129304564-1f667a18-6279-423c-8278-e1c85438aa8e.png)
 
 
 
